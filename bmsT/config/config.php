@@ -4,7 +4,7 @@ ini_set("display_errors",1);
 $hostname="localhost";//127:0:01
 $username="root";
 $password="";
-$database="bmsT";
+$database="st";
 
 $host="localhost";
 $username="root";
@@ -12,7 +12,7 @@ $password="";
 $db="";
 
 // $conn = new mysqli($host,$username,$password,$db);
-$conn = new mysqli("localhost","root","","bmsT");
+$conn = mysqli_connect($hostname,$username,$password,$database);
 if($conn->connect_error){
     //echo'failed';
 }else{
